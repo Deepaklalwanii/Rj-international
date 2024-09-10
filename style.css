@@ -1,0 +1,128 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .margin{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .rji-nav-logo h1{
+        font-family: 'Roboto';
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .rji-nav-logo span{
+        font-family: 'Roboto';
+        color: #000;
+        font-size: 24px;
+    }
+
+    .rji-nav-logo sub{
+        font-family: 'Roboto';
+        color: #000;
+        font-size: 24px;
+    }
+
+
+    .rji-header-area{
+        height: 60px;
+        color: #000;
+        background-color: #f7c600;
+        align-content: center;
+    }
+
+    .rji-nav-wrapper{
+        align-items: center;
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .rji-nav-wrapper ul{
+        display: flex;
+        gap: 30px;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .rji-nav-wrapper li{
+        cursor: pointer;
+        position: relative;
+    }
+
+    
+    .rji-nav-options{
+        display: flex;
+        gap: 30px;
+    }
+
+    .rji-nav-options a{
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .rji-nav-options li:after{
+        content: "";
+        position: absolute;
+        background-color: #000000c0;
+        height: 1.5px;
+        width: 0;
+        left: 0;
+        bottom: -10%;
+        transition: 0.3s;
+    }
+
+    .rji-nav-options li:hover:after{
+        width: 100%;
+    }
+
+    .rji-hero-banner{
+        /* background-image: url('images/rji-bg-.jpg'); */
+        background-color: #f7c600;
+        min-height: 89vh;
+        background-size: cover;
+        background-position: 0;
+    }
+
+    .container-1{
+        display: flex;
+    }
+    .rji-hero-container-img img{
+        max-width: 100%;
+    }
+
+    .rji-hero-container{
+        font-family: 'roboto';
+        width: 100%;
+        padding-top: 50px;
+        color: #000;
+    }
+
+
+    .rji-hero-container h1{
+        text-align: left;
+        font-size: 60px;
+        flex-wrap: wrap;
+    }
+
+    .rji-hero-container p{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .rji-hero-container span{
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 2px 2px #000 0.1;
+        cursor: pointer;
+        color:#000;
+    }
