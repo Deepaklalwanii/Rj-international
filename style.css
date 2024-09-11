@@ -14,6 +14,7 @@
         color: #000;
         font-size: 24px;
         font-weight: 400;
+        text-shadow: 1px 1px 2px grey;
     }
 
     .rji-nav-logo span{
@@ -111,6 +112,7 @@
         text-align: left;
         font-size: 60px;
         flex-wrap: wrap;
+        text-shadow: 1px 1px 2px grey;
         margin-bottom: 24px;
     }
 
@@ -144,21 +146,21 @@
         width: 100%;
     }
 
-    .rji-banne2-content{
-        
-    }
 
     .rji-banne2-content h2{
         font-size: 54px;
         font-weight: 600;
+        text-shadow: 1px 1px 2px grey;
         font-family: 'roboto';
         margin-bottom: 30px;
+        text-align: left;
     }
 
     .rji-banne2-content p{
         font-size: 18px;
         padding-bottom: 50px;
         border-bottom: 1px solid grey;
+        text-align: left;
     }
 
     .rji-our-solutions{
@@ -166,11 +168,13 @@
         min-height: fit-content;
         align-content: center;
         background-color: #fff;
-        margin-top: 100px;
+        padding-top: 20px;
+        margin-top: 160px;
     }
 
     .rji-our-solutions h3{
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .rji-our-solutions ul{
@@ -181,4 +185,8 @@
         text-decoration: none;
         list-style: none;
         text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
     }
