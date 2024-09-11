@@ -86,11 +86,10 @@
     }
 
     .rji-hero-banner{
-        /* background-image: url('images/rji-bg-.jpg'); */
         background-color: #f7c600;
         min-height: 89vh;
         background-size: cover;
-        background-position: 0;
+
     }
 
     .container-1{
@@ -112,17 +111,74 @@
         text-align: left;
         font-size: 60px;
         flex-wrap: wrap;
+        margin-bottom: 24px;
     }
 
     .rji-hero-container p{
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
+        margin-bottom: 20px;
     }
 
     .rji-hero-container span{
-        font-size: 18px;
-        font-weight: 600;
-        text-shadow: 2px 2px #000 0.1;
+        font-size: 24px;
         cursor: pointer;
         color:#000;
+    }
+    /* ------------------------------------------------- */
+
+    .rji-banner-2{
+        background-color: #dfdfdf;
+        min-height: 100vh;
+    }
+
+    .rji-banner-2container{
+        padding: 100px 0px 0px 0px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .rji-cart-imag img{
+        width: 100%;
+    }
+
+    .rji-banne2-content{
+        
+    }
+
+    .rji-banne2-content h2{
+        font-size: 54px;
+        font-weight: 600;
+        font-family: 'roboto';
+        margin-bottom: 30px;
+    }
+
+    .rji-banne2-content p{
+        font-size: 18px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid grey;
+    }
+
+    .rji-our-solutions{
+        width: 60%;
+        min-height: fit-content;
+        align-content: center;
+        background-color: #fff;
+        margin-top: 100px;
+    }
+
+    .rji-our-solutions h3{
+        text-align: center;
+    }
+
+    .rji-our-solutions ul{
+        padding-left: 0;
+    }
+
+    .rji-our-solutions li{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
     }
