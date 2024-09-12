@@ -124,9 +124,20 @@
 
     .rji-hero-container span{
         font-size: 24px;
-        cursor: pointer;
+        cursor: default;
         color:#000;
     }
+
+    .rji-hero-container button{
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        width: 150px;
+        color:#fff;
+        border: 1px solid grey;
+        background-color: rgba(0, 0, 0, 0.329);
+    }
+
     /* ------------------------------------------------- */
 
     .rji-banner-2{
@@ -167,8 +178,10 @@
         width: 60%;
         min-height: fit-content;
         align-content: center;
-        background-color: #fff;
+        background-color: #ececec;
+        box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.763);
         padding-top: 20px;
+        padding-bottom: 20px;
         margin-top: 160px;
     }
 
