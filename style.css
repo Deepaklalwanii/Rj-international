@@ -14,7 +14,7 @@
         color: #000;
         font-size: 24px;
         font-weight: 400;
-        text-shadow: 1px 1px 2px grey;
+        /* text-shadow: 1px 1px 2px grey; */
     }
 
     .rji-nav-logo span{
@@ -112,7 +112,6 @@
         text-align: left;
         font-size: 60px;
         flex-wrap: wrap;
-        text-shadow: 1px 1px 2px grey;
         margin-bottom: 24px;
     }
 
@@ -123,43 +122,22 @@
     }
 
     .rji-hero-container span{
-        font-size: 24px;
-        cursor: default;
+        font-size: 16px;
+        cursor: pointer;
         color:#000;
     }
 
     .rji-hero-container button{
-        font-size: 20px;
+        font-size: 16px;
         cursor: pointer;
         border-radius: 8px;
         width: 150px;
         height: 40px;
         color:#000;
         border: none;
-        background-color: transparent;
+        background-color: rgba(121, 118, 118, 0.276);
         position: relative;
     }
-
-    .rji-hero-container button:after{
-        content: '';
-        position: absolute;
-        width: 10%;
-        height: 40px;
-        color:#fff;
-        border-radius: 8px;
-        border: none;
-        background-color: rgba(121, 118, 118, 0.276);
-        left: 0;
-        bottom: 0;
-        transition: 0.3s;
-    }
-
-    .rji-hero-container button:hover::after{
-        color: #fff;
-        width: 100%;
-    }
-
-
 
     /* ------------------------------------------------- */
 
@@ -184,7 +162,6 @@
     .rji-banne2-content h2{
         font-size: 54px;
         font-weight: 600;
-        text-shadow: 1px 1px 2px grey;
         font-family: 'roboto';
         margin-bottom: 30px;
         text-align: left;
@@ -202,7 +179,6 @@
         min-height: fit-content;
         align-content: center;
         background-color: #ececec;
-        box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.763);
         padding-top: 20px;
         padding-bottom: 20px;
         margin-top: 160px;
