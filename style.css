@@ -133,10 +133,33 @@
         cursor: pointer;
         border-radius: 8px;
         width: 150px;
-        color:#fff;
-        border: 1px solid grey;
-        background-color: rgba(0, 0, 0, 0.329);
+        height: 40px;
+        color:#000;
+        border: none;
+        background-color: transparent;
+        position: relative;
     }
+
+    .rji-hero-container button:after{
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 40px;
+        color:#fff;
+        border-radius: 8px;
+        border: none;
+        background-color: rgba(121, 118, 118, 0.276);
+        left: 0;
+        bottom: 0;
+        transition: 0.3s;
+    }
+
+    .rji-hero-container button:hover::after{
+        color: #fff;
+        width: 100%;
+    }
+
+
 
     /* ------------------------------------------------- */
 
