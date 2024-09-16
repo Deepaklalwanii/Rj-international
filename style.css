@@ -320,4 +320,33 @@
 
     .rji-bio-container h2{
         font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .rji-profile{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    .rji-profile img{
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .rji-profile-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rji-profile-content p{
+        margin-bottom: 0;
+        color: #ffffffa4;
+    }
+
+
+    .rji-profile-content h6{
+        font-size: 20px;
+        font-weight: 700;
     }
