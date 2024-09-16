@@ -147,7 +147,7 @@
     }
 
     .rji-banner-2container{
-        padding: 100px 0px 0px 0px;
+        padding: 100px 0px 100px 0px;
         display: flex;
         align-items: stretch;
         justify-content: center;
@@ -155,11 +155,10 @@
     }
 
     .rji-cart-imag img{
-        width: 100%;
+        width: 50%;
     }
 
-
-    .rji-banne2-content h2{
+    .rji-banner2-content h2{
         font-size: 54px;
         font-weight: 600;
         font-family: 'roboto';
@@ -167,11 +166,68 @@
         text-align: left;
     }
 
-    .rji-banne2-content p{
+    .rji-banner2-content p{
         font-size: 18px;
         padding-bottom: 50px;
         border-bottom: 1px solid grey;
         text-align: left;
+    }
+
+    .rji-banner2-view-more{
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .rji-banner2-view-more span{
+        background-color: #f7c600;
+        font-size: 30px;
+        min-width: 50px;
+        min-height: 50px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 50%;
+        cursor: pointer;
+        animation: rotateBack 0.4s forwards;
+    }
+
+    .rji-banner2-view-more span:hover{
+        animation: rotateForward 0.4s forwards;
+    }
+        
+        @keyframes rotateForward {
+            from {
+              transform: rotate(-90deg);
+            }
+            to {
+              transform: rotate(90deg); 
+            }
+          }
+          
+          @keyframes rotateBack {
+            from {
+              transform: rotate(90deg); 
+            }
+            to {
+              transform: rotate(-90deg); 
+            }
+          }  
+
+
+    .rji-banner2-view-more span{
+        transform: rotate(-90deg);
+        
+    }
+
+    .rji-banner2-view-more h4{
+        text-align: left;
+        width: 40%;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0;
     }
 
     .rji-our-solutions{
@@ -202,3 +258,106 @@
         font-weight: 400;
         letter-spacing: 0.2px;
     }
+
+
+    /* ------------------------------------- */
+
+
+    .rji-service-contanier{
+        display: flex;
+        padding-bottom: 100px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .analytics-img{
+        background-image: url('images/analytics.jpg');
+        width: 50%;
+        min-height: 375px;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        transition: transform 0.2s ease;
+        background-position: 0 0;
+        transition: 0.3s;
+            
+    }
+
+    .cargo-img{
+        background-image: url('images/cargo.jpg');
+        width: 50%;
+        min-height: 375px;
+        background-repeat: no-repeat;
+        background-size: 120%;
+        transition: transform 0.2s ease;
+        background-position: 0 0;
+        transition: 0.3s;
+    }   
+
+    .analytics-img:hover{
+        background-size: 130%;
+        background-position: 0 0;
+    }
+
+    .cargo-img:hover{
+        background-size: 130%;
+        background-position: 0 0;
+
+    }
+
+
+
+
+
+/* 
+    .analytics-img{
+        width: 50%;
+        position: relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    .cargo-img{
+        width: 50%;
+        position: relative;
+        text-align: center;
+        color: #fff;
+    }
+
+    .analytics-img img{
+        width: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.2s ease;
+    }
+
+    .analytics-img img:hover{
+        width: 100%;
+        cursor: pointer;
+        transform: translateX(5px);
+    }
+
+    .cargo-img img{
+        width: 100%;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .cargo-img img:hover{
+        width: 100%;
+        cursor: pointer;
+        transform: translateX(5px);
+    }
+
+    .content-box1{
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        letter-spacing: 0.5rem;
+    }
+
+    .content-box2{
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        letter-spacing: 0.5rem;
+    } */
