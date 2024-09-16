@@ -280,11 +280,11 @@
     }
 
     .rji-cargo-poster{
-        background-image: url('images/cargo.jpg');
+        background-image: url('images/hero-banner-bg.jpg');
         width: 50%;
         min-height: 375px;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 110%;
         transition: 0.3s;
         align-content: center;
     }   
@@ -294,13 +294,30 @@
     }
 
     .rji-cargo-poster:hover{
-        background-size: 110%;
+        background-size: 120%;
     }
 
     /* ----------------------------------------------- */
+    
 
-    .video-background{
-        height: 100vh;
+    .bg-video{
+        position: relative;
+        min-height: 90vh;
+        z-index: -1;
+    }
 
+    .rji-bio-container i{
+        font-size: 64px;
     }
     
+    .rji-bio-container{
+        position: absolute;
+        width: 650px;
+        top: 30%;
+        right: 5%;
+        color: white;
+    }
+
+    .rji-bio-container h2{
+        font-size: 50px;
+    }
