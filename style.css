@@ -199,21 +199,21 @@
         
         @keyframes rotateForward {
             from {
-              transform: rotate(-90deg);
+            transform: rotate(-90deg);
             }
             to {
-              transform: rotate(90deg); 
+            transform: rotate(90deg); 
             }
-          }
-          
-          @keyframes rotateBack {
+        }
+        
+        @keyframes rotateBack {
             from {
-              transform: rotate(90deg); 
+            transform: rotate(90deg); 
             }
             to {
-              transform: rotate(-90deg); 
+            transform: rotate(-90deg); 
             }
-          }  
+        }  
 
 
     .rji-banner2-view-more span{
@@ -277,6 +277,7 @@
         background-size: 100%;
         transition: 0.3s;
         align-content: center;
+        cursor: pointer;
     }
 
     .rji-cargo-poster{
@@ -287,6 +288,7 @@
         background-size: 110%;
         transition: 0.3s;
         align-content: center;
+        cursor: pointer;
     }   
 
     .rji-analytics-poster:hover{
@@ -300,10 +302,24 @@
     /* ----------------------------------------------- */
     
 
-    .bg-video{
+    .rji-video-background{
         position: relative;
-        min-height: 90vh;
+        min-height: 100vh;
+    }
+
+    .bg-video{
+        position: absolute;
+        min-height: 100vh;
         z-index: -1;
+    }
+
+    .video-pixel-cover{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        min-height: 100vh;
+        width: 100%;
+        z-index: 1;
     }
 
     .rji-bio-container i{
@@ -313,9 +329,10 @@
     .rji-bio-container{
         position: absolute;
         width: 650px;
-        top: 30%;
+        top: 10%;
         right: 5%;
-        color: white;
+        color: rgba(255, 255, 255, 0.728);
+        z-index: 1;
     }
 
     .rji-bio-container h2{
@@ -331,8 +348,10 @@
 
 
     .rji-profile img{
-        width: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .rji-profile-content{
@@ -349,4 +368,105 @@
     .rji-profile-content h6{
         font-size: 20px;
         font-weight: 700;
+    }
+
+    /* ----------------------------------------------- */
+    .rji-offer-banner{
+        background-color: #dfdfdf;
+        min-height: 100vh;
+    }
+
+    .rji-offer-container{
+        display: flex;
+        align-items: center;
+        padding-top: 140px;
+        gap: 60px;
+    }
+
+    .rji-offer-content-container{
+        width: 50%;
+        border-right: 1px solid grey;
+    }
+
+    .rji-offer-content-container h3{
+        font-size: 50px;
+        padding-bottom: 30px;
+        font-weight: 700;   
+    }
+
+    .rji-offer-content-container p{
+        font-size: 18px;
+        padding-bottom: 30px;
+        font-weight: 400;
+        border-bottom: 1px solid grey;
+    }
+
+    .rji-offer-image{
+        width: 50%;
+    }
+
+    .rji-offer-image img{
+        width: 100%;
+    }
+
+    .rji-offer-banner-view-more{
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            width: 50%;
+            align-items: center;
+            cursor: pointer;
+        }
+
+
+    .rji-offer-banner-view-more span{
+        background-color: #f7c600;
+        font-size: 30px;
+        min-width: 50px;
+        min-height: 50px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 50%;
+        cursor: pointer;
+        animation: rotateBack 0.4s forwards;
+    }
+
+    .rji-offer-banner-view-more span:hover{
+        animation: rotateForward 0.4s forwards;
+    }
+        
+        @keyframes rotateForward {
+            from {
+            transform: rotate(-90deg);
+            }
+            to {
+            transform: rotate(90deg); 
+            }
+        }
+        
+        @keyframes rotateBack {
+            from {
+            transform: rotate(90deg); 
+            }
+            to {
+            transform: rotate(-90deg); 
+            }
+        }  
+
+
+        .rji-offer-banner-view-more span{
+        transform: rotate(-90deg);
+        
+    }
+
+    .rji-offer-banner-view-more h4{
+        font-size: 18px;
+    }
+    
+    /* ------------------------------------------------------ */
+
+    .images-banner img{
+        width: 100%;
+        height: 100vh;
+        cursor: pointer;
     }
