@@ -346,13 +346,13 @@
         align-items: center;
     }
 
-
     .rji-profile img{
         width: 80px;
         height: 80px;
         border-radius: 50%;
         object-fit: cover;
     }
+
 
     .rji-profile-content{
         display: flex;
@@ -465,8 +465,70 @@
     
     /* ------------------------------------------------------ */
 
-    .images-banner img{
+    .rji-form-container{
+        position: relative;
+        z-index: -1;
+    }
+
+    .rji-form{
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 350px;
+        top:20%;
+        right: 30%;
+        background-color: #ffffff63;
+        z-index: 1;
+    }
+
+
+
+
+
+    .rji-form-banner img{
         width: 100%;
         height: 100vh;
         cursor: pointer;
+    }
+
+
+    /* ----------------------------------------------- */
+
+    .rji-cargo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rji-cargo-section{
+        background-color: #000;
+        padding-bottom: 50px;
+    }
+
+
+    .rji-cargo-content{
+        color: #fff;
+        width: 600px;
+    }
+
+    .rji-cargo-content h2{
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .rji-cargo-content p{
+        font-size: 18px;
+        color: #dfdfdf;
+        margin-bottom: 30px;
+    }
+
+    .icon-200{
+        color: #f7c600;
+        font-size: 24px;
+    }
+
+    .rji-cargo-image-container img{
+        width: 550px;
+        transition: 0.8s;
     }
