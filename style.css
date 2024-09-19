@@ -465,35 +465,6 @@
     
     /* ------------------------------------------------------ */
 
-    .rji-form-container{
-        position: relative;
-        z-index: -1;
-    }
-
-    .rji-form{
-        position: absolute;
-        content: "";
-        width: 350px;
-        height: 350px;
-        top:20%;
-        right: 30%;
-        background-color: #ffffff63;
-        z-index: 1;
-    }
-
-
-
-
-
-    .rji-form-banner img{
-        width: 100%;
-        height: 100vh;
-        cursor: pointer;
-    }
-
-
-    /* ----------------------------------------------- */
-
     .rji-cargo-container{
         display: flex;
         justify-content: center;
@@ -502,7 +473,7 @@
 
     .rji-cargo-section{
         background-color: #000;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
 
@@ -531,4 +502,91 @@
     .rji-cargo-image-container img{
         width: 550px;
         transition: 0.8s;
+    }
+
+    /* ----------------------------------------------------- */
+
+    .rji-footer-section{
+        background-image: url('images/footer-bg.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .rji-footer-container{
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #fff;
+        justify-content: space-between;
+        padding-top: 90px;
+    }
+
+    .rji-contactus-us-layout p{
+        font-size: 18px;
+    }
+
+    .rji-contactus-us-layout h2{
+        font-size: 40px;
+    }
+
+    .rji-footer-box{
+        padding-top: 20px;
+    }
+
+    .rji-form-content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 400px;
+        background-color: #fb860056;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .rji-form-content input{
+        border: none;
+        height: 36px;
+        width: 100%;
+        border-radius: 8px;
+        color: #000;
+    }
+
+    .rji-form-content ::placeholder{
+        padding-left: 10px;
+    }
+
+    .rji-form-content h2{
+        text-align: center;
+    }
+
+    .rji-form-content textarea{
+        border: none;
+        border-radius: 8px;
+    }
+
+    .rji-form-content button{
+        width: 150px;
+        height: 40px;
+        align-self: center;
+        border: none;
+        border-radius: 10px;
+        background-color: #a2d2ff;
     }
