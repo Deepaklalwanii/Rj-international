@@ -588,5 +588,6 @@
         align-self: center;
         border: none;
         border-radius: 10px;
-        background-color: #a2d2ff;
+        background-color: #00000046;
+        color: #fff;
     }
