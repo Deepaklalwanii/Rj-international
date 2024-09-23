@@ -595,6 +595,7 @@
         width: 100%;
         border-radius: 8px;
         color: #000;
+        padding-left: 10px;
     }
 
     .rji-form-content ::placeholder{
@@ -1204,6 +1205,7 @@ footer a:hover {
     width: 100%;
     border-radius: 8px;
     color: #000;
+    padding-left: 10px;
 }
 
 .rji-form-content ::placeholder{
@@ -1819,6 +1821,7 @@ footer a:hover {
     width: 100%;
     border-radius: 8px;
     color: #000;
+    padding-left: 10px;
     }
 
     .rji-form-content ::placeholder{
@@ -2477,6 +2480,7 @@ font-size: 12px;
     width: 100%;
     border-radius: 8px;
     color: #000;
+    padding-left: 10px;
     }
 
     .rji-form-content ::placeholder{
@@ -3153,6 +3157,7 @@ font-size: 12px;
         width: 100%;
         border-radius: 8px;
         color: #000;
+        padding-left: 10px;
         }
     
         .rji-form-content ::placeholder{
