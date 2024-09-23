@@ -123,12 +123,13 @@
     .rji-hero-container h1{
         font-size: 60px;
         flex-wrap: wrap;
+        font-weight: 700;
         margin-bottom: 24px;
     }
 
     .rji-hero-container p{
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 20px;
     }
 
@@ -166,7 +167,6 @@
 
     .rji-banner-2{
         background-color: #dfdfdf;
-        min-height: 100vh;
     }
 
     .rji-banner-2container{
@@ -397,13 +397,12 @@
     /* ----------------------------------------------- */
     .rji-offer-banner{
         background-color: #dfdfdf;
-        min-height: 100vh;
     }
 
     .rji-offer-container{
         display: flex;
         align-items: center;
-        padding-top: 140px;
+        padding: 100px 0px 100px 0px;
         gap: 60px;
     }
 
@@ -415,12 +414,14 @@
     .rji-offer-content-container h3{
         font-size: 50px;
         padding-bottom: 30px;
+        padding-right: 10px;
         font-weight: 700;   
     }
 
     .rji-offer-content-container p{
         font-size: 18px;
         padding-bottom: 30px;
+        padding-right: 10px;
         font-weight: 400;
         border-bottom: 1px solid grey;
     }
@@ -553,6 +554,7 @@
     }
     .footer-links {
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .rji-footer-container{
@@ -565,11 +567,13 @@
     }
 
     .rji-contactus-us-layout p{
-        font-size: 18px;
+        font-size: 44px;
+        display: none;
     }
 
     .rji-contactus-us-layout h2{
         font-size: 40px;
+        display: none;
     }
 
     .rji-footer-box{
@@ -3068,7 +3072,7 @@ font-size: 12px;
     
         .rji-cargo-content p{
         font-size: 16px;
-        color: #dfdfdf;
+        color: #fff;
         margin-bottom: 30px;
         }
     
@@ -3120,7 +3124,7 @@ font-size: 12px;
         }
     
         .rji-contactus-us-layout p{
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 700;
         }
     
