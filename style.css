@@ -1213,6 +1213,7 @@ flex-direction: column;
 gap: 24px;
 width: 400px;
 background-color: #fb860056;
+color: #fff;
 padding: 20px;
 border-radius: 15px;
 }
@@ -1827,6 +1828,7 @@ flex-direction: column;
 gap: 24px;
 width: 400px;
 background-color: #fb860056;
+color: #fff;
 padding: 20px;
 border-radius: 15px;
 }
@@ -2455,6 +2457,7 @@ gap: 24px;
 width: 400px;
 background-color: #fb860056;
 padding: 20px;
+color: #fff;
 border-radius: 15px;
 }
 
