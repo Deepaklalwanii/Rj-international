@@ -1,788 +1,172 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .margin{
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0px 20px 0px 20px;
-    }
-
-    .rji-nav-logo h1{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-    .rji-nav-logo span{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-    }
-
-    .rji-nav-logo sub{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-    }
-
-
-    .rji-header-area{
-        position: fixed;
-        height: 60px;
-        width: 100%;
-        color: #fff;
-        margin: 0 auto;
-        background-color: #f7c6009d;
-        align-content: center;
-        z-index: 3;
-    }
-
-    .rji-nav-wrapper{
-        align-items: center;
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-    }
-
-    .rji-nav-wrapper ul{
-        display: flex;
-        gap: 30px;
-        text-decoration: none;
-        list-style: none;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    
-    .rji-nav-wrapper li{
-        cursor: pointer;
-        position: relative;
-        font-weight: 600;
-    }
-
-    .hamburger{
-        font-size: 24px;
-        display: none;
-    }
-
-    
-    .rji-nav-options{
-        display: flex;
-        gap: 30px;
-    }
-
-    .rji-nav-options a{
-        text-decoration: none;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .rji-nav-options li:after{
-        content: "";
-        position: absolute;
-        background-color: #ffffffdf;
-        height: 1.5px;
-        width: 0;
-        left: 0;
-        bottom: -10%;
-        transition: 0.3s;
-    }
-
-    .rji-nav-options li:hover:after{
-        width: 100%;
-    }
-
-    .rji-hero-banner{
-        align-content: center;
-        min-height: 100vh;
-        background-image: url('images/no-text-bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    .container-1{
-        display: flex;
-    }
-
-
-    .rji-hero-container{
-        text-align: center;
-        font-family: 'roboto';
-        width: 100%;
-        padding-top: 50px;
-        color: #fff;
-    }
-
-
-    .rji-hero-container h1{
-        font-size: 60px;
-        flex-wrap: wrap;
-        font-weight: 700;
-        margin-bottom: 24px;
-    }
-
-    .rji-hero-container p{
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .rji-hero-container span{
-        font-size: 16px;
-        cursor: pointer;
-        color:#fff;
-    }
-
-    .rji-hero-container button{
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 8px;
-        width: 150px;
-        height: 40px;
-        color:#000;
-        border: none;
-        background-color: #ffffffa2;
-    }
-
-    .rji-hero-container button:hover{
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 8px;
-        width: 150px;
-        height: 40px;
-        color:#fff;
-        border: none;
-        background-color: #0000007e;
-        transition: 0.2s;
-    }
-
-
-    /* ------------------------------------------------- */
-
-    .rji-banner-2{
-        background-color: #dfdfdf;
-    }
-
-    .rji-banner-2container{
-        padding: 100px 0px 100px 0px;
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .rji-cart-imag img{
-        width: 50%;
-    }
-
-    .rji-banner2-content h2{
-        font-size: 54px;
-        font-weight: 600;
-        font-family: 'roboto';
-        margin-bottom: 30px;
-        text-align: left;
-    }
-
-    .rji-banner2-content p{
-        font-size: 18px;
-        padding-bottom: 50px;
-        border-bottom: 1px solid grey;
-        text-align: left;
-    }
-
-    .rji-banner2-view-more{
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .rji-banner2-view-more span{
-        background-color: #f7c600;
-        font-size: 30px;
-        min-width: 50px;
-        min-height: 50px;
-        text-align: center;
-        font-weight: 600;
-        border-radius: 50%;
-        cursor: pointer;
-        animation: rotateBack 0.4s forwards;
-    }
-
-    .rji-banner2-view-more span:hover{
-        animation: rotateForward 0.4s forwards;
-    }
-        
-        @keyframes rotateForward {
-            from {
-            transform: rotate(-90deg);
-            }
-            to {
-            transform: rotate(90deg); 
-            }
-        }
-        
-        @keyframes rotateBack {
-            from {
-            transform: rotate(90deg); 
-            }
-            to {
-            transform: rotate(-90deg); 
-            }
-        }  
-
-
-    .rji-banner2-view-more span{
-        transform: rotate(-90deg);
-        
-    }
-
-    .rji-banner2-view-more h4{
-        text-align: left;
-        width: 40%;
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 0;
-    }
-
-    .rji-our-solutions{
-        width: 60%;
-        min-height: fit-content;
-        align-content: center;
-        background-color: #ececec;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-top: 160px;
-    }
-
-    .rji-our-solutions h3{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .rji-our-solutions ul{
-        padding-left: 0;
-    }
-
-    .rji-our-solutions li{
-        text-decoration: none;
-        list-style: none;
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 10px;
-        font-weight: 400;
-        letter-spacing: 0.2px;
-    }
-
-
-    /* ------------------------------------- */
-
-
-    .rji-service-contanier{
-        display: flex;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-        letter-spacing: 0.5rem;
-    }
-    .rji-analytics-poster{
-        background-image: url('images/analytics.jpg');
-        width: 50%;
-        min-height: 375px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        transition: 0.3s;
-        align-content: center;
-        cursor: pointer;
-    }
-
-    .rji-cargo-poster{
-        background-image: url('images/cargo-image2.jpg');
-        width: 50%;
-        min-height: 375px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        transition: 0.3s;
-        align-content: center;
-        cursor: pointer;
-    }   
-
-    .rji-analytics-poster:hover{
-        background-size: 110%;
-    }
-
-    .rji-cargo-poster:hover{
-        background-size: 110%;
-    }
-
-    /* ----------------------------------------------- */
-    
-
-    .rji-video-background{
-        position: relative;
-        min-height: 100vh;
-    }
-
-    .bg-video{
-        position: absolute;
-        min-height: 100vh;
-        z-index: -1;
-    }
-
-    .video-pixel-cover{
-        content: '';
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.4);
-        min-height: 100vh;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .rji-bio-container i{
-        font-size: 64px;
-    }
-    
-    .rji-bio-container{
-        position: absolute;
-        width: 650px;
-        top: 10%;
-        right: 5%;
-        color: rgba(255, 255, 255, 0.728);
-        z-index: 1;
-    }
-
-    .rji-bio-container h2{
-        font-size: 50px;
-        margin-bottom: 40px;
-    }
-
-    .rji-profile{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .rji-profile img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-
-    .rji-profile-content{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rji-profile-content p{
-        margin-bottom: 0;
-        color: #ffffffa4;
-    }
-
-
-    .rji-profile-content h6{
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    /* ----------------------------------------------- */
-    .rji-offer-banner{
-        background-color: #dfdfdf;
-    }
-
-    .rji-offer-container{
-        display: flex;
-        align-items: center;
-        padding: 100px 0px 100px 0px;
-        gap: 60px;
-    }
-
-    .rji-offer-content-container{
-        width: 50%;
-        border-right: 1px solid grey;
-    }
-
-    .rji-offer-content-container h3{
-        font-size: 50px;
-        padding-bottom: 30px;
-        padding-right: 10px;
-        font-weight: 700;   
-    }
-
-    .rji-offer-content-container p{
-        font-size: 18px;
-        padding-bottom: 30px;
-        padding-right: 10px;
-        font-weight: 400;
-        border-bottom: 1px solid grey;
-    }
-
-    .rji-offer-image{
-        width: 50%;
-    }
-
-    .rji-offer-image img{
-        width: 100%;
-    }
-
-    .rji-offer-banner-view-more{
-            display: flex;
-            gap: 20px;
-            flex-direction: row;
-            width: 50%;
-            align-items: center;
-            cursor: pointer;
-        }
-
-
-    .rji-offer-banner-view-more span{
-        background-color: #f7c600;
-        font-size: 30px;
-        min-width: 50px;
-        min-height: 50px;
-        text-align: center;
-        font-weight: 600;
-        border-radius: 50%;
-        cursor: pointer;
-        animation: rotateBack 0.4s forwards;
-    }
-
-    .rji-offer-banner-view-more span:hover{
-        animation: rotateForward 0.4s forwards;
-    }
-        
-        @keyframes rotateForward {
-            from {
-            transform: rotate(-90deg);
-            }
-            to {
-            transform: rotate(90deg); 
-            }
-        }
-        
-        @keyframes rotateBack {
-            from {
-            transform: rotate(90deg); 
-            }
-            to {
-            transform: rotate(-90deg); 
-            }
-        }  
-
-
-        .rji-offer-banner-view-more span{
-        transform: rotate(-90deg);
-        
-    }
-
-    .rji-offer-banner-view-more h4{
-        font-size: 18px;
-    }
-    
-    /* ------------------------------------------------------ */
-
-    .rji-cargo-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .rji-cargo-section{
-        background-color: #000;
-        padding-bottom: 100px;
-    }
-
-
-    .rji-cargo-content{
-        color: #fff;
-        width: 600px;
-    }
-
-    .rji-cargo-content h2{
-        font-size: 50px;
-        font-weight: 700;
-        margin-bottom: 30px;
-    }
-
-    .rji-cargo-content p{
-        font-size: 18px;
-        color: #dfdfdf;
-        margin-bottom: 30px;
-    }
-
-    .icon-200{
-        color: #f7c600;
-        font-size: 24px;
-    }
-
-    .rji-cargo-image-container img{
-        width: 550px;
-        transition: 0.8s;
-    }
-
-    /* ----------------------------------------------------- */
-
-    .rji-footer-section{
-        background-image: url('images/footer-bg.jpg');
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-    footer a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    footer a:hover {
-        text-decoration: underline;
-    }
-    .footer-links {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .rji-footer-container{
-        display: flex;
-        align-items: center;
-        padding-bottom: 50px;
-        border-bottom: 1px solid #ffffffb5;
-        justify-content: space-between;
-        padding-top: 90px;
-    }
-
-    .rji-contactus-us-layout p{
-        font-size: 44px;
-        display: none;
-    }
-
-    .rji-contactus-us-layout h2{
-        font-size: 40px;
-        display: none;
-    }
-
-    .rji-footer-box{
-        padding-top: 20px;
-    }
-
-    .rji-form-content{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 400px;
-        background-color: #fb860056;
-        padding: 20px;
-        border-radius: 15px;
-    }
-    .rji-form-content input{
-        border: none;
-        height: 36px;
-        width: 100%;
-        border-radius: 8px;
-        color: #000;
-        padding-left: 10px;
-    }
-
-    .rji-form-content ::placeholder{
-        padding-left: 10px;
-    }
-
-    .rji-form-content h2{
-        text-align: center;
-    }
-
-    .rji-form-content textarea{
-        border: none;
-        border-radius: 8px;
-    }
-
-    .rji-form-content button{
-        width: 150px;
-        height: 40px;
-        align-self: center;
-        border: none;
-        border-radius: 10px;
-        background-color: #00000046;
-        color: #fff;
-    }
-
-    /* --------------------------------------------------- */
-
-    @media (max-width: 1230px){
-
-        .rji-nav-logo h1{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 24px;
-            font-weight: 400;
-        }
-
-        .margin{
-            width: 1000px;
-            margin: 0 auto;
-            padding: 0px 20px 0px 20px;
-        }
-    
-        .rji-nav-logo span{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 24px;
-        }
-    
-        .rji-nav-logo sub{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 24px;
-        }
-    
-    
-        .rji-header-area{
-            position: fixed;
-            height: 60px;
-            width: 100%;
-            color: #fff;
-            background-color: #f7c6009d;
-            align-content: center;
-            z-index: 3;
-        }
-    
-        .rji-nav-wrapper{
-            align-items: center;
-            display: flex;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0px 20px 0px 20px;
-            justify-content: space-between;
-        }
-    
-        .rji-nav-wrapper ul{
-            display: flex;
-            gap: 30px;
-            text-decoration: none;
-            list-style: none;
-            align-items: center;
-            margin-bottom: 0;
-        }
-        
-        .rji-nav-wrapper li{
-            cursor: pointer;
-            position: relative;
-            font-weight: 600;
-        }
-    
-        
-        .rji-nav-options{
-            display: flex;
-            gap: 30px;
-        }
-    
-        .rji-nav-options a{
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer;
-        }
-    
-        .rji-nav-options li:after{
-            content: "";
-            position: absolute;
-            background-color: #ffffffdf;
-            height: 1.5px;
-            width: 0;
-            left: 0;
-            bottom: -10%;
-            transition: 0.3s;
-        }
-    
-        .rji-nav-options li:hover:after{
-            width: 100%;
-        }
-    
-        .rji-hero-banner{
-            align-content: center;
-            min-height: 100vh;
-            background-image: url('images/no-text-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-    
-        }
-    
-        .container-1{
-            display: flex;
-        }
-    
-    
-        .rji-hero-container{
-            text-align: center;
-            font-family: 'roboto';
-            width: 100%;
-            padding-top: 50px;
-            color: #fff;
-        }
-    
-    
-        .rji-hero-container h1{
-            font-size: 60px;
-            flex-wrap: wrap;
-            margin-bottom: 24px;
-        }
-    
-        .rji-hero-container p{
-            font-size: 18px;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-    
-        .rji-hero-container span{
-            font-size: 16px;
-            cursor: pointer;
-            color:#fff;
-        }
-    
-        .rji-hero-container button{
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
-            width: 150px;
-            height: 40px;
-            color:#000;
-            border: none;
-            background-color: #ffffffa2;
-            position: relative;
-        }
-
-        .rji-hero-container button:hover{
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
-            width: 150px;
-            height: 40px;
-            color:#fff;
-            border: none;
-            background-color: #0000007e;
-            transition: 0.2s;
-        }
-
-/* -------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+}
+
+.rji-nav-logo h1{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rji-nav-logo span{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+}
+
+.rji-nav-logo sub{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.rji-header-area{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    background-color: #f7c6009d;
+    align-content: center;
+    z-index: 3;
+}
+
+.rji-nav-wrapper{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.rji-nav-wrapper ul{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.rji-nav-wrapper li{
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+}
+
+.hamburger{
+    font-size: 24px;
+    display: none;
+}
+
+
+.rji-nav-options{
+    display: flex;
+    gap: 30px;
+}
+
+.rji-nav-options a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rji-nav-options li:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffffdf;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10%;
+    transition: 0.3s;
+}
+
+.rji-nav-options li:hover:after{
+    width: 100%;
+}
+
+.rji-hero-banner{
+    align-content: center;
+    min-height: 100vh;
+    background-image: url('images/no-text-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container-1{
+    display: flex;
+}
+
+
+.rji-hero-container{
+    text-align: center;
+    font-family: 'roboto';
+    width: 100%;
+    padding-top: 50px;
+    color: #fff;
+}
+
+
+.rji-hero-container h1{
+    font-size: 60px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.rji-hero-container p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rji-hero-container span{
+    font-size: 16px;
+    cursor: pointer;
+    color:#fff;
+}
+
+.rji-hero-container button{
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    color:#000;
+    border: none;
+    background-color: #ffffffa2;
+}
+
+.rji-hero-container button:hover{
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    border: none;
+    background-color: #0000007e;
+    transition: 0.2s;
+}
+
+
+/* ------------------------------------------------- */
 
 .rji-banner-2{
     background-color: #dfdfdf;
-    min-height: 100vh;
 }
 
 .rji-banner-2container{
@@ -898,7 +282,9 @@
     letter-spacing: 0.2px;
 }
 
-/* --------------------------------------------- */
+
+/* ------------------------------------- */
+
 
 .rji-service-contanier{
     display: flex;
@@ -910,7 +296,7 @@
 .rji-analytics-poster{
     background-image: url('images/analytics.jpg');
     width: 50%;
-    min-height: 345px;
+    min-height: 375px;
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 0.3s;
@@ -921,7 +307,7 @@
 .rji-cargo-poster{
     background-image: url('images/cargo-image2.jpg');
     width: 50%;
-    min-height: 345px;
+    min-height: 375px;
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 0.3s;
@@ -947,7 +333,7 @@
 
 .bg-video{
     position: absolute;
-    min-height: 0;
+    min-height: 100vh;
     z-index: -1;
 }
 
@@ -1011,13 +397,12 @@
 /* ----------------------------------------------- */
 .rji-offer-banner{
     background-color: #dfdfdf;
-    min-height: 100vh;
 }
 
 .rji-offer-container{
     display: flex;
     align-items: center;
-    padding-top: 140px;
+    padding: 100px 0px 100px 0px;
     gap: 60px;
 }
 
@@ -1029,12 +414,14 @@
 .rji-offer-content-container h3{
     font-size: 50px;
     padding-bottom: 30px;
+    padding-right: 10px;
     font-weight: 700;   
 }
 
 .rji-offer-content-container p{
     font-size: 18px;
     padding-bottom: 30px;
+    padding-right: 10px;
     font-weight: 400;
     border-bottom: 1px solid grey;
 }
@@ -1167,23 +554,26 @@ footer a:hover {
 }
 .footer-links {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .rji-footer-container{
     display: flex;
     align-items: center;
     padding-bottom: 50px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffffb5;
     justify-content: space-between;
     padding-top: 90px;
 }
 
 .rji-contactus-us-layout p{
-    font-size: 18px;
+    font-size: 44px;
+    display: none;
 }
 
 .rji-contactus-us-layout h2{
     font-size: 40px;
+    display: none;
 }
 
 .rji-footer-box{
@@ -1193,9 +583,10 @@ footer a:hover {
 .rji-form-content{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     width: 400px;
     background-color: #fb860056;
+    color: #fff;
     padding: 20px;
     border-radius: 15px;
 }
@@ -1208,9 +599,6 @@ footer a:hover {
     padding-left: 10px;
 }
 
-.rji-form-content ::placeholder{
-    padding-left: 10px;
-}
 
 .rji-form-content h2{
     text-align: center;
@@ -1219,6 +607,7 @@ footer a:hover {
 .rji-form-content textarea{
     border: none;
     border-radius: 8px;
+    padding-left: 10px;
 }
 
 .rji-form-content button{
@@ -1231,10 +620,27 @@ footer a:hover {
     color: #fff;
 }
 
-}
-/* ---------------------------------------------- */
 
-@media (max-width: 1000px){
+#contact-dialog{
+    display: flex;
+    justify-content: center;
+}
+.mfp-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; 
+}
+
+.mfp-close i {
+    color: white;
+}
+
+
+
+/* --------------------------------------------------- */
+
+@media (max-width: 1230px){
 
     .rji-nav-logo h1{
         font-family: 'Roboto';
@@ -1244,7 +650,7 @@ footer a:hover {
     }
 
     .margin{
-        width: 850px;
+        width: 1000px;
         margin: 0 auto;
         padding: 0px 20px 0px 20px;
     }
@@ -1264,7 +670,7 @@ footer a:hover {
 
     .rji-header-area{
         position: fixed;
-        height: 50px;
+        height: 60px;
         width: 100%;
         color: #fff;
         background-color: #f7c6009d;
@@ -1348,13 +754,13 @@ footer a:hover {
 
 
     .rji-hero-container h1{
-        font-size: 44px;
+        font-size: 60px;
         flex-wrap: wrap;
         margin-bottom: 24px;
     }
 
     .rji-hero-container p{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -1391,461 +797,1068 @@ footer a:hover {
 
 /* -------------------------------------------------------- */
 
+.rji-banner-2{
+background-color: #dfdfdf;
+min-height: 100vh;
+}
 
-    .margin{
-        padding: 0;
-    }
+.rji-banner-2container{
+padding: 100px 0px 100px 0px;
+display: flex;
+align-items: stretch;
+justify-content: center;
+gap: 20px;
+}
 
-    .rji-banner-2{
-    background-color: #dfdfdf;
-    min-height: 100vh;
-    }
+.rji-cart-imag img{
+width: 50%;
+}
 
-    .rji-banner-2container{
-    padding: 50px 0px 50px 0px;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
-    }
+.rji-banner2-content h2{
+font-size: 54px;
+font-weight: 600;
+font-family: 'roboto';
+margin-bottom: 30px;
+text-align: left;
+}
 
-    .rji-cart-imag img{
-    width: 50%;
-    }
+.rji-banner2-content p{
+font-size: 18px;
+padding-bottom: 50px;
+border-bottom: 1px solid grey;
+text-align: left;
+}
 
-    .rji-banner2-content h2{
-    font-size: 44px;
-    font-weight: 600;
-    font-family: 'roboto';
-    margin-bottom: 30px;
-    text-align: left;
-    }
+.rji-banner2-view-more{
+display: flex;
+gap: 20px;
+flex-direction: row;
+width: 100%;
+align-items: center;
+cursor: pointer;
+}
 
-    .rji-banner2-content p{
-    font-size: 16px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid grey;
-    text-align: left;
-    }
+.rji-banner2-view-more span{
+background-color: #f7c600;
+font-size: 30px;
+min-width: 50px;
+min-height: 50px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
 
-    .rji-banner2-view-more{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    cursor: pointer;
-    }
+.rji-banner2-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
 
-    .rji-banner2-view-more span{
-    background-color: #f7c600;
-    font-size: 24px;
-    min-width: 40px;
-    min-height: 40px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 50%;
-    cursor: pointer;
-    animation: rotateBack 0.4s forwards;
-    }
-
-    .rji-banner2-view-more span:hover{
-    animation: rotateForward 0.4s forwards;
-    }
-
-    @keyframes rotateForward {
-        from {
-        transform: rotate(-90deg);
-        }
-        to {
-        transform: rotate(90deg); 
-        }
-    }
-
-    @keyframes rotateBack {
-        from {
-        transform: rotate(90deg); 
-        }
-        to {
-        transform: rotate(-90deg); 
-        }
-    }  
-
-
-    .rji-banner2-view-more span{
+@keyframes rotateForward {
+    from {
     transform: rotate(-90deg);
-
     }
-
-    .rji-banner2-view-more h4{
-    text-align: left;
-    width: 40%;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0;
+    to {
+    transform: rotate(90deg); 
     }
+}
 
-    .rji-our-solutions{
-    width: 60%;
-    min-height: fit-content;
-    align-content: center;
-    background-color: #ececec;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 160px;
+@keyframes rotateBack {
+    from {
+    transform: rotate(90deg); 
     }
-
-    .rji-our-solutions h3{
-    text-align: center;
-    margin-bottom: 20px;
+    to {
+    transform: rotate(-90deg); 
     }
+}  
 
-    .rji-our-solutions ul{
-    padding-left: 0;
-    }
 
-    .rji-our-solutions li{
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    }
+.rji-banner2-view-more span{
+transform: rotate(-90deg);
 
-    /* --------------------------------------------- */
+}
 
-    .rji-service-contanier{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 0.5rem;
-    }
-    .rji-analytics-poster{
-    background-image: url('images/analytics.jpg');
-    width: 50%;
-    min-height: 290px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s;
-    align-content: center;
-    cursor: pointer;
-    }
+.rji-banner2-view-more h4{
+text-align: left;
+width: 40%;
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 0;
+}
 
-    .rji-cargo-poster{
-    background-image: url('images/cargo-image2.jpg');
-    width: 50%;
-    min-height: 290px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s;
-    align-content: center;
-    cursor: pointer;
-    }   
+.rji-our-solutions{
+width: 60%;
+min-height: fit-content;
+align-content: center;
+background-color: #ececec;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 160px;
+}
 
-    .rji-analytics-poster:hover{
-    background-size: 110%;
-    }
+.rji-our-solutions h3{
+text-align: center;
+margin-bottom: 20px;
+}
 
-    .rji-cargo-poster:hover{
-    background-size: 110%;
-    }
+.rji-our-solutions ul{
+padding-left: 0;
+}
+
+.rji-our-solutions li{
+text-decoration: none;
+list-style: none;
+text-align: center;
+font-size: 16px;
+margin-bottom: 10px;
+font-weight: 400;
+letter-spacing: 0.2px;
+}
+
+/* --------------------------------------------- */
+
+.rji-service-contanier{
+display: flex;
+width: 100%;
+text-align: center;
+color: #fff;
+letter-spacing: 0.5rem;
+}
+.rji-analytics-poster{
+background-image: url('images/analytics.jpg');
+width: 50%;
+min-height: 345px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+align-content: center;
+cursor: pointer;
+}
+
+.rji-cargo-poster{
+background-image: url('images/cargo-image2.jpg');
+width: 50%;
+min-height: 345px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+align-content: center;
+cursor: pointer;
+}   
+
+.rji-analytics-poster:hover{
+background-size: 110%;
+}
+
+.rji-cargo-poster:hover{
+background-size: 110%;
+}
 
 /* ----------------------------------------------- */
 
 
-    .rji-video-background{
-    position: relative;
-    min-height: 83vh;
-    }
+.rji-video-background{
+position: relative;
+min-height: 100vh;
+}
 
-    .bg-video{
-    position: absolute;
-    min-height: 0;
-    z-index: -1;
-    }
+.bg-video{
+position: absolute;
+min-height: 0;
+z-index: -1;
+}
 
-    .video-pixel-cover{
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    min-height: 83vh;
-    width: 100%;
-    z-index: 1;
-    }
+.video-pixel-cover{
+content: '';
+position: absolute;
+background-color: rgba(0, 0, 0, 0.4);
+min-height: 100vh;
+width: 100%;
+z-index: 1;
+}
 
-    .rji-bio-container i{
-    font-size: 44px;
-    }
+.rji-bio-container i{
+font-size: 64px;
+}
 
-    .rji-bio-container{
-    position: absolute;
-    width: 650px;
-    top: 10%;
-    right: 5%;
-    color: rgba(255, 255, 255, 0.728);
-    z-index: 1;
-    }
+.rji-bio-container{
+position: absolute;
+width: 650px;
+top: 10%;
+right: 5%;
+color: rgba(255, 255, 255, 0.728);
+z-index: 1;
+}
 
-    .rji-bio-container h2{
-    font-size: 44px;
-    margin-bottom: 40px;
-    }
+.rji-bio-container h2{
+font-size: 50px;
+margin-bottom: 40px;
+}
 
-    .rji-profile{
+.rji-profile{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+.rji-profile img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.rji-profile-content{
+display: flex;
+flex-direction: column;
+}
+
+.rji-profile-content p{
+margin-bottom: 0;
+color: #ffffffa4;
+}
+
+
+.rji-profile-content h6{
+font-size: 20px;
+font-weight: 700;
+}
+
+/* ----------------------------------------------- */
+.rji-offer-banner{
+background-color: #dfdfdf;
+min-height: 100vh;
+}
+
+.rji-offer-container{
+display: flex;
+align-items: center;
+padding-top: 140px;
+gap: 60px;
+}
+
+.rji-offer-content-container{
+width: 50%;
+border-right: 1px solid grey;
+}
+
+.rji-offer-content-container h3{
+font-size: 50px;
+padding-bottom: 30px;
+font-weight: 700;   
+}
+
+.rji-offer-content-container p{
+font-size: 18px;
+padding-bottom: 30px;
+font-weight: 400;
+border-bottom: 1px solid grey;
+}
+
+.rji-offer-image{
+width: 50%;
+}
+
+.rji-offer-image img{
+width: 100%;
+}
+
+.rji-offer-banner-view-more{
     display: flex;
     gap: 20px;
-    align-items: center;
-    }
-
-    .rji-profile img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    }
-
-
-    .rji-profile-content{
-    display: flex;
-    flex-direction: column;
-    }
-
-    .rji-profile-content p{
-    margin-bottom: 0;
-    color: #ffffffa4;
-    }
-
-
-    .rji-profile-content h6{
-    font-size: 18px;
-    font-weight: 700;
-    }
-
-    /* ----------------------------------------------- */
-    .rji-offer-banner{
-    background-color: #dfdfdf;
-    min-height: 0;
-    }
-
-    .rji-offer-container{
-    display: flex;
-    align-items: center;
-    padding:50px 0px 50px 0px;
-    gap: 60px;
-    }
-
-    .rji-offer-content-container{
+    flex-direction: row;
     width: 50%;
-    border-right: 1px solid grey;
-    }
-
-    .rji-offer-content-container h3{
-    font-size: 44px;
-    padding-bottom: 30px;
-    font-weight: 700;   
-    }
-
-    .rji-offer-content-container p{
-    font-size: 16px;
-    padding-bottom: 30px;
-    font-weight: 400;
-    border-bottom: 1px solid grey;
-    }
-
-    .rji-offer-image{
-    width: 50%;
-    }
-
-    .rji-offer-image img{
-    width: 100%;
-    }
-
-    .rji-offer-banner-view-more{
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        width: 50%;
-        align-items: center;
-        cursor: pointer;
-    }
-
-
-    .rji-offer-banner-view-more span{
-    background-color: #f7c600;
-    font-size: 24px;
-    min-width: 40px;
-    min-height: 40px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 50%;
+    align-items: center;
     cursor: pointer;
-    animation: rotateBack 0.4s forwards;
-    }
-
-    .rji-offer-banner-view-more span:hover{
-    animation: rotateForward 0.4s forwards;
-    }
-
-    @keyframes rotateForward {
-        from {
-        transform: rotate(-90deg);
-        }
-        to {
-        transform: rotate(90deg); 
-        }
-    }
-
-    @keyframes rotateBack {
-        from {
-        transform: rotate(90deg); 
-        }
-        to {
-        transform: rotate(-90deg); 
-        }
-    }  
+}
 
 
-    .rji-offer-banner-view-more span{
+.rji-offer-banner-view-more span{
+background-color: #f7c600;
+font-size: 30px;
+min-width: 50px;
+min-height: 50px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
+
+.rji-offer-banner-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
+
+@keyframes rotateForward {
+    from {
     transform: rotate(-90deg);
-
     }
-
-    .rji-offer-banner-view-more h4{
-    font-size: 16px;
+    to {
+    transform: rotate(90deg); 
     }
+}
 
-    /* ------------------------------------------------------ */
-
-    .rji-cargo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes rotateBack {
+    from {
+    transform: rotate(90deg); 
     }
-
-    .rji-cargo-section{
-    background-color: #000;
-    padding-bottom: 100px;
+    to {
+    transform: rotate(-90deg); 
     }
+}  
 
 
-    .rji-cargo-content{
+.rji-offer-banner-view-more span{
+transform: rotate(-90deg);
+
+}
+
+.rji-offer-banner-view-more h4{
+font-size: 18px;
+}
+
+/* ------------------------------------------------------ */
+
+.rji-cargo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rji-cargo-section{
+background-color: #000;
+padding-bottom: 100px;
+}
+
+
+.rji-cargo-content{
+color: #fff;
+width: 600px;
+}
+
+.rji-cargo-content h2{
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.rji-cargo-content p{
+font-size: 18px;
+color: #dfdfdf;
+margin-bottom: 30px;
+}
+
+.icon-200{
+color: #f7c600;
+font-size: 24px;
+}
+
+.rji-cargo-image-container img{
+width: 550px;
+transition: 0.8s;
+}
+
+/* ----------------------------------------------------- */
+
+.rji-footer-section{
+background-image: url('images/footer-bg.jpg');
+background-position: right;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+footer a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+.footer-links {
+margin-top: 10px;
+}
+
+.rji-footer-container{
+display: flex;
+align-items: center;
+padding-bottom: 50px;
+border-bottom: 1px solid #fff;
+justify-content: space-between;
+padding-top: 90px;
+}
+
+.rji-contactus-us-layout p{
+font-size: 18px;
+}
+
+.rji-contactus-us-layout h2{
+font-size: 40px;
+}
+
+.rji-footer-box{
+padding-top: 20px;
+}
+
+.rji-form-content{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 400px;
+background-color: #fb860056;
+padding: 20px;
+border-radius: 15px;
+}
+.rji-form-content input{
+border: none;
+height: 36px;
+width: 100%;
+border-radius: 8px;
+color: #000;
+padding-left: 10px;
+}
+
+
+.rji-form-content h2{
+text-align: center;
+}
+
+.rji-form-content textarea{
+border: none;
+border-radius: 8px;
+padding-left: 10px;
+}
+
+.rji-form-content button{
+width: 150px;
+height: 40px;
+align-self: center;
+border: none;
+border-radius: 10px;
+background-color: #00000046;
+color: #fff;
+}
+
+}
+/* ---------------------------------------------- */
+
+@media (max-width: 1000px){
+
+.rji-nav-logo h1{
+    font-family: 'Roboto';
     color: #fff;
-    width: 600px;
-    }
+    font-size: 24px;
+    font-weight: 400;
+}
 
-    .rji-cargo-content h2{
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    }
+.margin{
+    width: 850px;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+}
 
-    .rji-cargo-content p{
-    font-size: 16px;
-    color: #dfdfdf;
-    margin-bottom: 30px;
-    }
+.rji-nav-logo span{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+}
 
-    .icon-200{
-    color: #f7c600;
-    font-size: 20px;
-    }
+.rji-nav-logo sub{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+}
 
-    .rji-cargo-image-container img{
-    width: 450px;
-    transition: 0.8s;
-    }
 
-    /* ----------------------------------------------------- */
+.rji-header-area{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #f7c6009d;
+    align-content: center;
+    z-index: 3;
+}
 
-    .rji-footer-section{
-    background-image: url('images/footer-bg.jpg');
+.rji-nav-wrapper{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.rji-nav-wrapper ul{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.rji-nav-wrapper li{
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+}
+
+
+.rji-nav-options{
+    display: flex;
+    gap: 30px;
+}
+
+.rji-nav-options a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rji-nav-options li:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffffdf;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10%;
+    transition: 0.3s;
+}
+
+.rji-nav-options li:hover:after{
+    width: 100%;
+}
+
+.rji-hero-banner{
+    align-content: center;
+    min-height: 100vh;
+    background-image: url('images/no-text-bg.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    }
 
-    footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+}
+
+.container-1{
+    display: flex;
+}
+
+
+.rji-hero-container{
     text-align: center;
-    }
-    footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    }
-    footer a:hover {
-    text-decoration: underline;
-    }
-    .footer-links {
-    margin-top: 10px;
-    }
-
-    .rji-footer-container{
-    display: flex;
-    align-items: center;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #fff;
-    justify-content: space-between;
-    padding-top: 90px;
-    }
-
-    .rji-contactus-us-layout p{
-    font-size: 16px;
-    }
-
-    .rji-contactus-us-layout h2{
-    font-size: 30px;
-    }
-
-    .rji-footer-box{
-    padding-top: 20px;
-    }
-
-    .rji-form-content{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 400px;
-    background-color: #fb860056;
-    padding: 20px;
-    border-radius: 15px;
-    }
-    .rji-form-content input{
-    border: none;
-    height: 36px;
+    font-family: 'roboto';
     width: 100%;
+    padding-top: 50px;
+    color: #fff;
+}
+
+
+.rji-hero-container h1{
+    font-size: 44px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.rji-hero-container p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.rji-hero-container span{
+    font-size: 16px;
+    cursor: pointer;
+    color:#fff;
+}
+
+.rji-hero-container button{
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 8px;
-    color: #000;
-    padding-left: 10px;
-    }
-
-    .rji-form-content ::placeholder{
-    padding-left: 10px;
-    }
-
-    .rji-form-content h2{
-    text-align: center;
-    }
-
-    .rji-form-content textarea{
-    border: none;
-    border-radius: 8px;
-    }
-
-    .rji-form-content button{
     width: 150px;
     height: 40px;
-    align-self: center;
+    color:#000;
     border: none;
-    border-radius: 10px;
-    background-color: #00000046;
-    color: #fff;
+    background-color: #ffffffa2;
+    position: relative;
+}
+
+.rji-hero-container button:hover{
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    border: none;
+    background-color: #0000007e;
+    transition: 0.2s;
+}
+
+/* -------------------------------------------------------- */
+
+
+.margin{
+    padding: 0;
+}
+
+.rji-banner-2{
+background-color: #dfdfdf;
+min-height: 100vh;
+}
+
+.rji-banner-2container{
+padding: 50px 0px 50px 0px;
+display: flex;
+align-items: stretch;
+justify-content: center;
+gap: 20px;
+}
+
+.rji-cart-imag img{
+width: 50%;
+}
+
+.rji-banner2-content h2{
+font-size: 44px;
+font-weight: 600;
+font-family: 'roboto';
+margin-bottom: 30px;
+text-align: left;
+}
+
+.rji-banner2-content p{
+font-size: 16px;
+padding-bottom: 50px;
+border-bottom: 1px solid grey;
+text-align: left;
+}
+
+.rji-banner2-view-more{
+display: flex;
+gap: 20px;
+flex-direction: row;
+width: 100%;
+align-items: center;
+cursor: pointer;
+}
+
+.rji-banner2-view-more span{
+background-color: #f7c600;
+font-size: 24px;
+min-width: 40px;
+min-height: 40px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
+
+.rji-banner2-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
+
+@keyframes rotateForward {
+    from {
+    transform: rotate(-90deg);
     }
+    to {
+    transform: rotate(90deg); 
+    }
+}
+
+@keyframes rotateBack {
+    from {
+    transform: rotate(90deg); 
+    }
+    to {
+    transform: rotate(-90deg); 
+    }
+}  
+
+
+.rji-banner2-view-more span{
+transform: rotate(-90deg);
+
+}
+
+.rji-banner2-view-more h4{
+text-align: left;
+width: 40%;
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 0;
+}
+
+.rji-our-solutions{
+width: 60%;
+min-height: fit-content;
+align-content: center;
+background-color: #ececec;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 160px;
+}
+
+.rji-our-solutions h3{
+text-align: center;
+margin-bottom: 20px;
+}
+
+.rji-our-solutions ul{
+padding-left: 0;
+}
+
+.rji-our-solutions li{
+text-decoration: none;
+list-style: none;
+text-align: center;
+font-size: 16px;
+margin-bottom: 10px;
+font-weight: 400;
+letter-spacing: 0.2px;
+}
+
+/* --------------------------------------------- */
+
+.rji-service-contanier{
+display: flex;
+width: 100%;
+text-align: center;
+color: #fff;
+letter-spacing: 0.5rem;
+}
+.rji-analytics-poster{
+background-image: url('images/analytics.jpg');
+width: 50%;
+min-height: 290px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+align-content: center;
+cursor: pointer;
+}
+
+.rji-cargo-poster{
+background-image: url('images/cargo-image2.jpg');
+width: 50%;
+min-height: 290px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+align-content: center;
+cursor: pointer;
+}   
+
+.rji-analytics-poster:hover{
+background-size: 110%;
+}
+
+.rji-cargo-poster:hover{
+background-size: 110%;
+}
+
+/* ----------------------------------------------- */
+
+
+.rji-video-background{
+position: relative;
+min-height: 83vh;
+}
+
+.bg-video{
+position: absolute;
+min-height: 0;
+z-index: -1;
+}
+
+.video-pixel-cover{
+content: '';
+position: absolute;
+background-color: rgba(0, 0, 0, 0.4);
+min-height: 83vh;
+width: 100%;
+z-index: 1;
+}
+
+.rji-bio-container i{
+font-size: 44px;
+}
+
+.rji-bio-container{
+position: absolute;
+width: 650px;
+top: 10%;
+right: 5%;
+color: rgba(255, 255, 255, 0.728);
+z-index: 1;
+}
+
+.rji-bio-container h2{
+font-size: 44px;
+margin-bottom: 40px;
+}
+
+.rji-profile{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+.rji-profile img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.rji-profile-content{
+display: flex;
+flex-direction: column;
+}
+
+.rji-profile-content p{
+margin-bottom: 0;
+color: #ffffffa4;
+}
+
+
+.rji-profile-content h6{
+font-size: 18px;
+font-weight: 700;
+}
+
+/* ----------------------------------------------- */
+.rji-offer-banner{
+background-color: #dfdfdf;
+min-height: 0;
+}
+
+.rji-offer-container{
+display: flex;
+align-items: center;
+padding:50px 0px 50px 0px;
+gap: 60px;
+}
+
+.rji-offer-content-container{
+width: 50%;
+border-right: 1px solid grey;
+}
+
+.rji-offer-content-container h3{
+font-size: 44px;
+padding-bottom: 30px;
+font-weight: 700;   
+}
+
+.rji-offer-content-container p{
+font-size: 16px;
+padding-bottom: 30px;
+font-weight: 400;
+border-bottom: 1px solid grey;
+}
+
+.rji-offer-image{
+width: 50%;
+}
+
+.rji-offer-image img{
+width: 100%;
+}
+
+.rji-offer-banner-view-more{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.rji-offer-banner-view-more span{
+background-color: #f7c600;
+font-size: 24px;
+min-width: 40px;
+min-height: 40px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
+
+.rji-offer-banner-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
+
+@keyframes rotateForward {
+    from {
+    transform: rotate(-90deg);
+    }
+    to {
+    transform: rotate(90deg); 
+    }
+}
+
+@keyframes rotateBack {
+    from {
+    transform: rotate(90deg); 
+    }
+    to {
+    transform: rotate(-90deg); 
+    }
+}  
+
+
+.rji-offer-banner-view-more span{
+transform: rotate(-90deg);
+
+}
+
+.rji-offer-banner-view-more h4{
+font-size: 16px;
+}
+
+/* ------------------------------------------------------ */
+
+.rji-cargo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rji-cargo-section{
+background-color: #000;
+padding-bottom: 100px;
+}
+
+
+.rji-cargo-content{
+color: #fff;
+width: 600px;
+}
+
+.rji-cargo-content h2{
+font-size: 44px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.rji-cargo-content p{
+font-size: 16px;
+color: #dfdfdf;
+margin-bottom: 30px;
+}
+
+.icon-200{
+color: #f7c600;
+font-size: 20px;
+}
+
+.rji-cargo-image-container img{
+width: 450px;
+transition: 0.8s;
+}
+
+/* ----------------------------------------------------- */
+
+.rji-footer-section{
+background-image: url('images/footer-bg.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+footer a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+.footer-links {
+margin-top: 10px;
+}
+
+.rji-footer-container{
+display: flex;
+align-items: center;
+padding-bottom: 50px;
+border-bottom: 1px solid #fff;
+justify-content: space-between;
+padding-top: 90px;
+}
+
+.rji-contactus-us-layout p{
+font-size: 16px;
+}
+
+.rji-contactus-us-layout h2{
+font-size: 30px;
+}
+
+.rji-footer-box{
+padding-top: 20px;
+}
+
+.rji-form-content{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 400px;
+background-color: #fb860056;
+padding: 20px;
+border-radius: 15px;
+}
+.rji-form-content input{
+border: none;
+height: 36px;
+width: 100%;
+border-radius: 8px;
+color: #000;
+padding-left: 10px;
+}
+
+
+.rji-form-content h2{
+text-align: center;
+}
+
+.rji-form-content textarea{
+border: none;
+border-radius: 8px;
+padding-left: 10px;
+}
+
+.rji-form-content button{
+width: 150px;
+height: 40px;
+align-self: center;
+border: none;
+border-radius: 10px;
+background-color: #00000046;
+color: #fff;
+}
 
 }
 /* -------------------------------------------- */
@@ -1853,192 +1866,163 @@ footer a:hover {
 @media (max-width: 850px){
 
 
-.rji-responsive-header{
-    background-color: #fff;
-    width: 50%;
-    height: 100%;
+.rji-nav-logo h1{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.margin{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+}
+
+.rji-nav-logo span{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
+}
+
+.rji-nav-logo sub{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 24px;
 }
 
 
+.rji-header-area{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #f7c6009d;
+    align-content: center;
+}
+
+.rji-nav-wrapper{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0px 20px 0px 20px; */
+    justify-content: space-between;
+}
+
+.rji-nav-wrapper ul{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.rji-nav-wrapper li{
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    display: none;
+}
+
+.hamburger{
+    font-size: 34px;
+    display: inline-block;
+}
 
 
+.rji-nav-options{
+    display: flex;
+    gap: 30px;
+}
+
+.rji-nav-options a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rji-nav-options li:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffffdf;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10%;
+    transition: 0.3s;
+}
+
+.rji-nav-options li:hover:after{
+    width: 100%;
+}
+
+.rji-hero-banner{
+    align-content: center;
+    min-height: 100vh;
+    background-image: url('images/no-text-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container-1{
+    display: flex;
+}
 
 
+.rji-hero-container{
+    text-align: center;
+    font-family: 'roboto';
+    width: 100%;
+    padding-top: 50px;
+    color: #fff;
+}
 
 
+.rji-hero-container h1{
+    font-size: 36px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
 
+.rji-hero-container p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 
+.rji-hero-container span{
+    font-size: 16px;
+    cursor: pointer;
+    color:#fff;
+}
 
+.rji-hero-container button{
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    color:#000;
+    border: none;
+    background-color: #ffffffa2;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-    .rji-nav-logo h1{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-    .margin{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0px 20px 0px 20px;
-    }
-
-    .rji-nav-logo span{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-    }
-
-    .rji-nav-logo sub{
-        font-family: 'Roboto';
-        color: #fff;
-        font-size: 24px;
-    }
-
-
-    .rji-header-area{
-        position: fixed;
-        height: 50px;
-        width: 100%;
-        color: #fff;
-        background-color: #f7c6009d;
-        align-content: center;
-    }
-
-    .rji-nav-wrapper{
-        align-items: center;
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        /* padding: 0px 20px 0px 20px; */
-        justify-content: space-between;
-    }
-
-    .rji-nav-wrapper ul{
-        display: flex;
-        gap: 30px;
-        text-decoration: none;
-        list-style: none;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    
-    .rji-nav-wrapper li{
-        cursor: pointer;
-        position: relative;
-        font-weight: 600;
-        display: none;
-    }
-
-    .hamburger{
-        font-size: 34px;
-        display: inline-block;
-    }
-
-    
-    .rji-nav-options{
-        display: flex;
-        gap: 30px;
-    }
-
-    .rji-nav-options a{
-        text-decoration: none;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .rji-nav-options li:after{
-        content: "";
-        position: absolute;
-        background-color: #ffffffdf;
-        height: 1.5px;
-        width: 0;
-        left: 0;
-        bottom: -10%;
-        transition: 0.3s;
-    }
-
-    .rji-nav-options li:hover:after{
-        width: 100%;
-    }
-
-    .rji-hero-banner{
-        align-content: center;
-        min-height: 100vh;
-        background-image: url('images/no-text-bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    .container-1{
-        display: flex;
-    }
-
-
-    .rji-hero-container{
-        text-align: center;
-        font-family: 'roboto';
-        width: 100%;
-        padding-top: 50px;
-        color: #fff;
-    }
-
-
-    .rji-hero-container h1{
-        font-size: 36px;
-        flex-wrap: wrap;
-        margin-bottom: 24px;
-    }
-
-    .rji-hero-container p{
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-
-    .rji-hero-container span{
-        font-size: 16px;
-        cursor: pointer;
-        color:#fff;
-    }
-
-    .rji-hero-container button{
-        font-size: 14px;
-        cursor: pointer;
-        border-radius: 8px;
-        width: 120px;
-        height: 40px;
-        color:#000;
-        border: none;
-        background-color: #ffffffa2;
-        position: relative;
-    }
-
-    .rji-hero-container button:hover{
-        font-size: 14px;
-        cursor: pointer;
-        border-radius: 8px;
-        width: 120px;
-        height: 40px;
-        color:#fff;
-        border: none;
-        background-color: #0000007e;
-        transition: 0.2s;
-    }
+.rji-hero-container button:hover{
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    color:#fff;
+    border: none;
+    background-color: #0000007e;
+    transition: 0.2s;
+}
 
 /* -------------------------------------------------------- */
 
@@ -2101,21 +2085,21 @@ animation: rotateForward 0.4s forwards;
 }
 
 @keyframes rotateForward {
-    from {
-    transform: rotate(-90deg);
-    }
-    to {
-    transform: rotate(90deg); 
-    }
+from {
+transform: rotate(-90deg);
+}
+to {
+transform: rotate(90deg); 
+}
 }
 
 @keyframes rotateBack {
-    from {
-    transform: rotate(90deg); 
-    }
-    to {
-    transform: rotate(-90deg); 
-    }
+from {
+transform: rotate(90deg); 
+}
+to {
+transform: rotate(-90deg); 
+}
 }  
 
 
@@ -2184,12 +2168,12 @@ cursor: pointer;
 }
 
 .rji-analytics-poster h3{
-    font-size: 18px;
+font-size: 18px;
 }
 
 
 .rji-cargo-poster h3{
-    font-size: 18px;
+font-size: 18px;
 }
 
 
@@ -2323,6 +2307,644 @@ width: 100%;
 }
 
 .rji-offer-banner-view-more{
+display: flex;
+gap: 20px;
+flex-direction: row;
+width: 50%;
+align-items: center;
+cursor: pointer;
+}
+
+
+.rji-offer-banner-view-more span{
+background-color: #f7c600;
+font-size: 24px;
+min-width: 40px;
+min-height: 40px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
+
+.rji-offer-banner-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
+
+@keyframes rotateForward {
+from {
+transform: rotate(-90deg);
+}
+to {
+transform: rotate(90deg); 
+}
+}
+
+@keyframes rotateBack {
+from {
+transform: rotate(90deg); 
+}
+to {
+transform: rotate(-90deg); 
+}
+}  
+
+
+.rji-offer-banner-view-more span{
+transform: rotate(-90deg);
+
+}
+
+.rji-offer-banner-view-more h4{
+font-size: 12px;
+}
+
+/* ------------------------------------------------------ */
+
+.rji-cargo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rji-cargo-section{
+background-color: #000;
+padding-bottom: 50px;
+}
+
+
+.rji-cargo-content{
+color: #fff;
+width: 600px;
+}
+
+.rji-cargo-content h2{
+font-size: 36px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.rji-cargo-content p{
+font-size: 16px;
+color: #dfdfdf;
+margin-bottom: 30px;
+}
+
+.icon-200{
+color: #f7c600;
+font-size: 18px;
+}
+
+.rji-cargo-image-container img{
+width: 350px;
+transition: 0.8s;
+}
+
+/* ----------------------------------------------------- */
+
+.rji-footer-section{
+background-image: url('images/footer-bg.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 18px;
+text-align: center;
+}
+footer a {
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+.footer-links {
+margin-top: 10px;
+}
+
+.rji-footer-container{
+display: flex;
+align-items: center;
+padding: 50px 0px 50px 0px;
+border-bottom: 1px solid #fff;
+justify-content: space-between;
+}
+
+.rji-contactus-us-layout p{
+font-size: 16px;
+}
+
+.rji-contactus-us-layout h2{
+font-size: 30px;
+}
+
+.rji-footer-box{
+padding-top: 20px;
+}
+
+.rji-form-content{
+display: flex;
+flex-direction: column;
+gap: 24px;
+width: 400px;
+background-color: #fb860056;
+padding: 20px;
+border-radius: 15px;
+}
+
+.rji-form-content input{
+border: none;
+height: 36px;
+width: 100%;
+border-radius: 8px;
+color: #000;
+padding-left: 10px;
+}
+
+
+.rji-form-content h2{
+text-align: center;
+}
+
+.rji-form-content textarea{
+border: none;
+border-radius: 8px;
+padding-left: 10px;
+}
+
+.rji-form-content button{
+width: 150px;
+height: 40px;
+align-self: center;
+border: none;
+border-radius: 10px;
+background-color: #00000046;
+color: #fff;
+}
+
+}
+
+/* ------------------------------------------------------ */
+
+@media (max-width: 768px){
+
+
+    .rji-nav-logo h1{
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .margin{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .rji-nav-logo span{
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .rji-nav-logo sub{
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 18px;
+    }
+
+
+    .rji-header-area{
+        position: fixed;
+        height: 36px;
+        top: 0;
+        width: 100%;
+        color: #fff;
+        background-color: #f7c6009d;
+        align-content: center;
+    }
+
+    .rji-nav-wrapper{
+        align-items: center;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .rji-nav-wrapper ul{
+        display: flex;
+        gap: 30px;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .rji-nav-wrapper li{
+        cursor: pointer;
+        position: relative;
+        font-weight: 600;
+        display: none;
+    }
+
+    .hamburger{
+        font-size: 28px;
+        display: inline-block;
+    }
+
+    
+    .rji-nav-options{
+        display: flex;
+        gap: 20px;
+    }
+
+    .rji-nav-options a{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .rji-nav-options li:after{
+        content: "";
+        position: absolute;
+        background-color: #ffffffdf;
+        height: 1.5px;
+        width: 0;
+        left: 0;
+        bottom: -10%;
+        transition: 0.3s;
+    }
+
+    .rji-nav-options li:hover:after{
+        width: 100%;
+    }
+
+    .rji-hero-banner{
+        align-content: center;
+        min-height: 100vh;
+        background-image: url('images/no-text-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .container-1{
+        display: flex;
+    }
+
+    .rji-hero-container{
+        text-align: center;
+        font-family: 'roboto';
+        width: 100%;
+        padding-top: 50px;
+        color: #fff;
+        padding: 0px 20px 0px 20px;
+    }
+
+
+    .rji-hero-container h1{
+        font-size: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    .rji-hero-container p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .rji-hero-container span{
+        font-size: 16px;
+        cursor: pointer;
+        color:#fff;
+    }
+
+    .rji-hero-container button{
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        width: 120px;
+        height: 40px;
+        color:#000;
+        border: none;
+        background-color: #ffffffa2;
+        position: relative;
+    }
+
+    .rji-hero-container button:hover{
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        width: 120px;
+        height: 40px;
+        color:#fff;
+        border: none;
+        background-color: #0000007e;
+        transition: 0.2s;
+    }
+
+/* -------------------------------------------------------- */
+
+.rji-banner-2{
+background-color: #dfdfdf;
+min-height: 100vh;
+}
+
+.rji-banner-2container{
+padding: 10px 20px 10px 20px;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: center;
+gap: 20px;
+}
+
+.rji-cart-image img{
+width: 350px;
+padding-top: 10px;
+}
+
+.rji-banner2-content h2{
+font-size: 36px;
+font-weight: 600;
+font-family: 'roboto';
+margin-bottom: 30px;
+text-align: left;
+}
+
+.rji-banner2-content p{
+font-size: 16px;
+padding-bottom: 20px;
+border-bottom: 1px solid grey;
+text-align: left;
+}
+
+.rji-banner2-view-more{
+display: flex;
+gap: 20px;
+flex-direction: row;
+width: 100%;
+align-items: center;
+cursor: pointer;
+}
+
+.rji-banner2-view-more span{
+background-color: #f7c600;
+font-size: 24px;
+min-width: 40px;
+min-height: 40px;
+text-align: center;
+font-weight: 600;
+border-radius: 50%;
+cursor: pointer;
+animation: rotateBack 0.4s forwards;
+}
+
+.rji-banner2-view-more span:hover{
+animation: rotateForward 0.4s forwards;
+}
+
+@keyframes rotateForward {
+    from {
+    transform: rotate(-90deg);
+    }
+    to {
+    transform: rotate(90deg); 
+    }
+}
+
+@keyframes rotateBack {
+    from {
+    transform: rotate(90deg); 
+    }
+    to {
+    transform: rotate(-90deg); 
+    }
+}  
+
+
+.rji-banner2-view-more span{
+transform: rotate(-90deg);
+
+}
+
+.rji-banner2-view-more h4{
+text-align: left;
+width: 40%;
+font-size: 12px;
+font-weight: 600;
+margin-bottom: 0;
+}
+
+.rji-our-solutions{
+width: 100%;
+min-height: fit-content;
+align-content: center;
+background-color: #ececec;
+padding: 30px;
+padding-bottom: 20px;
+margin-top: 20px;
+}
+
+.rji-our-solutions h3{
+font-size: 16px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.rji-our-solutions ul{
+padding-left: 0;
+}
+
+.rji-our-solutions li{
+text-decoration: none;
+list-style: none;
+text-align: center;
+font-size: 12px;
+margin-bottom: 10px;
+font-weight: 400;
+letter-spacing: 0.2px;
+}
+
+/* --------------------------------------------- */
+
+.rji-service-contanier{
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: center;
+color: #fff;
+letter-spacing: 0.5rem;
+}
+
+.rji-analytics-poster{
+background-image: url('images/analytics.jpg');
+width: 100%;
+min-height: 240px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+align-content: center;
+background-position: center;
+cursor: pointer;
+}
+
+.rji-analytics-poster h3{
+    font-size: 18px;
+}
+
+
+.rji-cargo-poster h3{
+    font-size: 18px;
+}
+
+
+.rji-cargo-poster{
+background-image: url('images/cargo-image2.jpg');
+width: 100%;
+min-height: 240px;
+background-repeat: no-repeat;
+background-size: 100%;
+transition: 0.3s;
+background-position: center;
+align-content: center;
+cursor: pointer;
+}   
+
+.rji-analytics-poster:hover{
+background-size: 110%;
+}
+
+.rji-cargo-poster:hover{
+background-size: 110%;
+}
+
+/* ----------------------------------------------- */
+
+
+.rji-video-background{
+background-image: url('images/profile-bg-img.jpg');
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+min-height: 100vh;
+}
+
+.bg-video{
+display: none;
+position: absolute;
+min-height: 0;
+z-index: -1;
+}
+
+.video-pixel-cover{
+display: none;
+content: '';
+position: absolute;
+background-color: rgba(0, 0, 0, 0.4);
+width: 100%;
+z-index: 1;
+}
+
+.rji-bio-container i{
+font-size: 36px;
+}
+
+.rji-bio-container{
+position: absolute;
+width: 350px;
+top: 20%;
+right: 0%;
+color: rgb(255, 255, 255);
+z-index: 1;
+}
+
+.rji-bio-container h2{
+font-size: 28px;
+margin-bottom: 40px;
+}
+
+.rji-profile{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+.rji-profile img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+
+.rji-profile-content{
+display: flex;
+flex-direction: column;
+}
+
+.rji-profile-content p{
+margin-bottom: 0;
+color: #ffffffa4;
+}
+
+
+.rji-profile-content h6{
+font-size: 18px;
+font-weight: 700;
+}
+
+/* ----------------------------------------------- */
+.rji-offer-banner{
+background-color: #dfdfdf;
+min-height: 0;
+}
+
+.rji-offer-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 50px 20px 50px 20px;
+gap: 60px;
+}
+
+.rji-offer-content-container{
+width: 100%;
+border-right: 1px solid grey;
+}
+
+.rji-offer-content-container h3{
+font-size: 36px;
+padding-bottom: 30px;
+font-weight: 700;   
+}
+
+.rji-offer-content-container p{
+font-size: 16px;
+padding-bottom: 10px;
+font-weight: 400;
+border-bottom: 1px solid grey;
+}
+
+.rji-offer-image{
+width: 100%;
+}
+
+.rji-offer-image img{
+width: 100%;
+}
+
+.rji-offer-banner-view-more{
     display: flex;
     gap: 20px;
     flex-direction: row;
@@ -2382,10 +3004,15 @@ font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 20px 0px 20px;
     }
 
     .rji-cargo-section{
+    background-image: url('images/cargo-home-img-2-new.png');
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #000;
+    background-size: 300px;
     padding-bottom: 50px;
     }
 
@@ -2403,7 +3030,7 @@ font-size: 12px;
 
     .rji-cargo-content p{
     font-size: 16px;
-    color: #dfdfdf;
+    color: #fff;
     margin-bottom: 30px;
     }
 
@@ -2415,6 +3042,7 @@ font-size: 12px;
     .rji-cargo-image-container img{
     width: 350px;
     transition: 0.8s;
+    display: none;
     }
 
     /* ----------------------------------------------------- */
@@ -2446,14 +3074,16 @@ font-size: 12px;
 
     .rji-footer-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 20px 50px 20px;
     border-bottom: 1px solid #fff;
     justify-content: space-between;
     }
 
     .rji-contactus-us-layout p{
-    font-size: 16px;
+    font-size: 40px;
+    font-weight: 700;
     }
 
     .rji-contactus-us-layout h2{
@@ -2468,9 +3098,11 @@ font-size: 12px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 400px;
+    height: 400px;
+    width: 350px;
     background-color: #fb860056;
     padding: 20px;
+    color: #fff;
     border-radius: 15px;
     }
 
@@ -2483,10 +3115,6 @@ font-size: 12px;
     padding-left: 10px;
     }
 
-    .rji-form-content ::placeholder{
-    padding-left: 10px;
-    }
-
     .rji-form-content h2{
     text-align: center;
     }
@@ -2494,6 +3122,7 @@ font-size: 12px;
     .rji-form-content textarea{
     border: none;
     border-radius: 8px;
+    padding-left: 10px;
     }
 
     .rji-form-content button{
@@ -2505,681 +3134,4 @@ font-size: 12px;
     background-color: #00000046;
     color: #fff;
     }
-
 }
-
-
-@media (max-width: 768px){
-
-
-    .rji-responsive-header{
-        background-color: #fff;
-        width: 50%;
-        height: 100%;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        .rji-nav-logo h1{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 18px;
-            font-weight: 400;
-        }
-    
-        .margin{
-            width: 100%;
-            margin: 0 auto;
-            padding: 0;
-        }
-    
-        .rji-nav-logo span{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 18px;
-        }
-    
-        .rji-nav-logo sub{
-            font-family: 'Roboto';
-            color: #fff;
-            font-size: 18px;
-        }
-    
-    
-        .rji-header-area{
-            position: fixed;
-            height: 36px;
-            top: 0;
-            width: 100%;
-            color: #fff;
-            background-color: #f7c6009d;
-            align-content: center;
-        }
-    
-        .rji-nav-wrapper{
-            align-items: center;
-            display: flex;
-            width: 100%;
-            margin: 0 auto;
-            justify-content: space-between;
-        }
-    
-        .rji-nav-wrapper ul{
-            display: flex;
-            gap: 30px;
-            text-decoration: none;
-            list-style: none;
-            align-items: center;
-            margin-bottom: 0;
-        }
-        
-        .rji-nav-wrapper li{
-            cursor: pointer;
-            position: relative;
-            font-weight: 600;
-            display: none;
-        }
-    
-        .hamburger{
-            font-size: 28px;
-            display: inline-block;
-        }
-    
-        
-        .rji-nav-options{
-            display: flex;
-            gap: 20px;
-        }
-    
-        .rji-nav-options a{
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer;
-        }
-    
-        .rji-nav-options li:after{
-            content: "";
-            position: absolute;
-            background-color: #ffffffdf;
-            height: 1.5px;
-            width: 0;
-            left: 0;
-            bottom: -10%;
-            transition: 0.3s;
-        }
-    
-        .rji-nav-options li:hover:after{
-            width: 100%;
-        }
-    
-        .rji-hero-banner{
-            align-content: center;
-            min-height: 100vh;
-            background-image: url('images/no-text-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-    
-        }
-    
-        .container-1{
-            display: flex;
-        }
-    
-        .rji-hero-container{
-            text-align: center;
-            font-family: 'roboto';
-            width: 100%;
-            padding-top: 50px;
-            color: #fff;
-            padding: 0px 20px 0px 20px;
-        }
-    
-    
-        .rji-hero-container h1{
-            font-size: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 24px;
-        }
-    
-        .rji-hero-container p{
-            font-size: 16px;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-    
-        .rji-hero-container span{
-            font-size: 16px;
-            cursor: pointer;
-            color:#fff;
-        }
-    
-        .rji-hero-container button{
-            font-size: 14px;
-            cursor: pointer;
-            border-radius: 8px;
-            width: 120px;
-            height: 40px;
-            color:#000;
-            border: none;
-            background-color: #ffffffa2;
-            position: relative;
-        }
-    
-        .rji-hero-container button:hover{
-            font-size: 14px;
-            cursor: pointer;
-            border-radius: 8px;
-            width: 120px;
-            height: 40px;
-            color:#fff;
-            border: none;
-            background-color: #0000007e;
-            transition: 0.2s;
-        }
-    
-    /* -------------------------------------------------------- */
-    
-    .rji-banner-2{
-    background-color: #dfdfdf;
-    min-height: 100vh;
-    }
-    
-    .rji-banner-2container{
-    padding: 10px 20px 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
-    }
-    
-    .rji-cart-image img{
-    width: 350px;
-    padding-top: 10px;
-    }
-    
-    .rji-banner2-content h2{
-    font-size: 36px;
-    font-weight: 600;
-    font-family: 'roboto';
-    margin-bottom: 30px;
-    text-align: left;
-    }
-    
-    .rji-banner2-content p{
-    font-size: 16px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid grey;
-    text-align: left;
-    }
-    
-    .rji-banner2-view-more{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    cursor: pointer;
-    }
-    
-    .rji-banner2-view-more span{
-    background-color: #f7c600;
-    font-size: 24px;
-    min-width: 40px;
-    min-height: 40px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 50%;
-    cursor: pointer;
-    animation: rotateBack 0.4s forwards;
-    }
-    
-    .rji-banner2-view-more span:hover{
-    animation: rotateForward 0.4s forwards;
-    }
-    
-    @keyframes rotateForward {
-        from {
-        transform: rotate(-90deg);
-        }
-        to {
-        transform: rotate(90deg); 
-        }
-    }
-    
-    @keyframes rotateBack {
-        from {
-        transform: rotate(90deg); 
-        }
-        to {
-        transform: rotate(-90deg); 
-        }
-    }  
-    
-    
-    .rji-banner2-view-more span{
-    transform: rotate(-90deg);
-    
-    }
-    
-    .rji-banner2-view-more h4{
-    text-align: left;
-    width: 40%;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 0;
-    }
-    
-    .rji-our-solutions{
-    width: 100%;
-    min-height: fit-content;
-    align-content: center;
-    background-color: #ececec;
-    padding: 30px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    }
-    
-    .rji-our-solutions h3{
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 20px;
-    }
-    
-    .rji-our-solutions ul{
-    padding-left: 0;
-    }
-    
-    .rji-our-solutions li{
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    font-size: 12px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    }
-    
-    /* --------------------------------------------- */
-    
-    .rji-service-contanier{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 0.5rem;
-    }
-    
-    .rji-analytics-poster{
-    background-image: url('images/analytics.jpg');
-    width: 100%;
-    min-height: 240px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s;
-    align-content: center;
-    background-position: center;
-    cursor: pointer;
-    }
-    
-    .rji-analytics-poster h3{
-        font-size: 18px;
-    }
-    
-    
-    .rji-cargo-poster h3{
-        font-size: 18px;
-    }
-    
-    
-    .rji-cargo-poster{
-    background-image: url('images/cargo-image2.jpg');
-    width: 100%;
-    min-height: 240px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: 0.3s;
-    background-position: center;
-    align-content: center;
-    cursor: pointer;
-    }   
-    
-    .rji-analytics-poster:hover{
-    background-size: 110%;
-    }
-    
-    .rji-cargo-poster:hover{
-    background-size: 110%;
-    }
-    
-    /* ----------------------------------------------- */
-    
-    
-    .rji-video-background{
-    background-image: url('images/profile-bg-img.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    min-height: 100vh;
-    }
-    
-    .bg-video{
-    display: none;
-    position: absolute;
-    min-height: 0;
-    z-index: -1;
-    }
-    
-    .video-pixel-cover{
-    display: none;
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    z-index: 1;
-    }
-    
-    .rji-bio-container i{
-    font-size: 36px;
-    }
-    
-    .rji-bio-container{
-    position: absolute;
-    width: 350px;
-    top: 20%;
-    right: 0%;
-    color: rgb(255, 255, 255);
-    z-index: 1;
-    }
-    
-    .rji-bio-container h2{
-    font-size: 28px;
-    margin-bottom: 40px;
-    }
-    
-    .rji-profile{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    }
-    
-    .rji-profile img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    }
-    
-    
-    .rji-profile-content{
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .rji-profile-content p{
-    margin-bottom: 0;
-    color: #ffffffa4;
-    }
-    
-    
-    .rji-profile-content h6{
-    font-size: 18px;
-    font-weight: 700;
-    }
-    
-    /* ----------------------------------------------- */
-    .rji-offer-banner{
-    background-color: #dfdfdf;
-    min-height: 0;
-    }
-    
-    .rji-offer-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px 50px 20px;
-    gap: 60px;
-    }
-    
-    .rji-offer-content-container{
-    width: 100%;
-    border-right: 1px solid grey;
-    }
-    
-    .rji-offer-content-container h3{
-    font-size: 36px;
-    padding-bottom: 30px;
-    font-weight: 700;   
-    }
-    
-    .rji-offer-content-container p{
-    font-size: 16px;
-    padding-bottom: 10px;
-    font-weight: 400;
-    border-bottom: 1px solid grey;
-    }
-    
-    .rji-offer-image{
-    width: 100%;
-    }
-    
-    .rji-offer-image img{
-    width: 100%;
-    }
-    
-    .rji-offer-banner-view-more{
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        width: 50%;
-        align-items: center;
-        cursor: pointer;
-    }
-    
-    
-    .rji-offer-banner-view-more span{
-    background-color: #f7c600;
-    font-size: 24px;
-    min-width: 40px;
-    min-height: 40px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 50%;
-    cursor: pointer;
-    animation: rotateBack 0.4s forwards;
-    }
-    
-    .rji-offer-banner-view-more span:hover{
-    animation: rotateForward 0.4s forwards;
-    }
-    
-    @keyframes rotateForward {
-        from {
-        transform: rotate(-90deg);
-        }
-        to {
-        transform: rotate(90deg); 
-        }
-    }
-    
-    @keyframes rotateBack {
-        from {
-        transform: rotate(90deg); 
-        }
-        to {
-        transform: rotate(-90deg); 
-        }
-    }  
-    
-    
-    .rji-offer-banner-view-more span{
-    transform: rotate(-90deg);
-    
-    }
-    
-    .rji-offer-banner-view-more h4{
-    font-size: 12px;
-    }
-    
-    /* ------------------------------------------------------ */
-    
-        .rji-cargo-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px 0px 20px;
-        }
-    
-        .rji-cargo-section{
-        background-image: url('images/cargo-home-img-2-new.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #000;
-        background-size: 300px;
-        padding-bottom: 50px;
-        }
-    
-    
-        .rji-cargo-content{
-        color: #fff;
-        width: 600px;
-        }
-    
-        .rji-cargo-content h2{
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 30px;
-        }
-    
-        .rji-cargo-content p{
-        font-size: 16px;
-        color: #fff;
-        margin-bottom: 30px;
-        }
-    
-        .icon-200{
-        color: #f7c600;
-        font-size: 18px;
-        }
-    
-        .rji-cargo-image-container img{
-        width: 350px;
-        transition: 0.8s;
-        display: none;
-        }
-    
-        /* ----------------------------------------------------- */
-    
-        .rji-footer-section{
-        background-image: url('images/footer-bg.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        }
-    
-        footer {
-        background-color: #333;
-        color: #fff;
-        padding: 18px;
-        text-align: center;
-        }
-        footer a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-        }
-        footer a:hover {
-        text-decoration: underline;
-        }
-        .footer-links {
-        margin-top: 10px;
-        }
-    
-        .rji-footer-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px 50px 20px;
-        border-bottom: 1px solid #fff;
-        justify-content: space-between;
-        }
-    
-        .rji-contactus-us-layout p{
-        font-size: 40px;
-        font-weight: 700;
-        }
-    
-        .rji-contactus-us-layout h2{
-        font-size: 30px;
-        }
-    
-        .rji-footer-box{
-        padding-top: 20px;
-        }
-    
-        .rji-form-content{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        height: 400px;
-        width: 350px;
-        background-color: #fb860056;
-        padding: 20px;
-        border-radius: 15px;
-        }
-    
-        .rji-form-content input{
-        border: none;
-        height: 36px;
-        width: 100%;
-        border-radius: 8px;
-        color: #000;
-        padding-left: 10px;
-        }
-    
-        .rji-form-content ::placeholder{
-        padding-left: 10px;
-        }
-    
-        .rji-form-content h2{
-        text-align: center;
-        }
-    
-        .rji-form-content textarea{
-        border: none;
-        border-radius: 8px;
-        }
-    
-        .rji-form-content button{
-        width: 150px;
-        height: 40px;
-        align-self: center;
-        border: none;
-        border-radius: 10px;
-        background-color: #00000046;
-        color: #fff;
-        }
-    }
