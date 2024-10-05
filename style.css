@@ -620,6 +620,9 @@ footer a:hover {
     color: #fff;
 }
 
+#cross-icon{
+    padding-right: 50px;
+}
 
 #contact-dialog{
     display: flex;
@@ -636,6 +639,9 @@ footer a:hover {
     color: white;
 }
 
+#contact-dialog {
+    margin-right: 50px;
+}
 
 
 /* --------------------------------------------------- */
@@ -2529,7 +2535,7 @@ color: #fff;
         top: 0;
         width: 100%;
         color: #fff;
-        background-color: #f7c6009d;
+        background-color: #00000050;
         align-content: center;
     }
 
@@ -2592,7 +2598,7 @@ color: #fff;
     .rji-hero-banner{
         align-content: center;
         min-height: 100vh;
-        background-image: url('images/no-text-bg.jpg');
+        background-image: url('img-mobile-respso/hero-banner.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2629,6 +2635,7 @@ color: #fff;
         font-size: 16px;
         cursor: pointer;
         color:#fff;
+        font-weight: 700;
     }
 
     .rji-hero-container button{
@@ -2637,9 +2644,11 @@ color: #fff;
         border-radius: 8px;
         width: 120px;
         height: 40px;
-        color:#000;
+        color:#FFF;
+        font-weight: 700;
+        letter-spacing: 0.10rem;
         border: none;
-        background-color: #ffffffa2;
+        background-color: #ffffff4e;
         position: relative;
     }
 
@@ -2754,12 +2763,12 @@ min-height: fit-content;
 align-content: center;
 background-color: #ececec;
 padding: 30px;
-padding-bottom: 20px;
+padding-bottom: 10px;
 margin-top: 20px;
 }
 
 .rji-our-solutions h3{
-font-size: 16px;
+font-size: 24px;
 text-align: center;
 margin-bottom: 20px;
 }
@@ -2790,7 +2799,7 @@ letter-spacing: 0.5rem;
 }
 
 .rji-analytics-poster{
-background-image: url('images/analytics.jpg');
+background-image: url('img-mobile-respso/analysis-img.jog.avif');
 width: 100%;
 min-height: 240px;
 background-repeat: no-repeat;
@@ -2812,7 +2821,7 @@ cursor: pointer;
 
 
 .rji-cargo-poster{
-background-image: url('images/cargo-image2.jpg');
+background-image: url('img-mobile-respso/cargo-img-2.jpg');
 width: 100%;
 min-height: 240px;
 background-repeat: no-repeat;
@@ -2835,9 +2844,10 @@ background-size: 110%;
 
 
 .rji-video-background{
-background-image: url('images/profile-bg-img.jpg');
+background-image: url('img-mobile-respso/bio-banner.jpg');
 background-repeat: no-repeat;
 background-position: center;
+background-size: 100%;
 position: relative;
 min-height: 100vh;
 }
@@ -2897,7 +2907,9 @@ flex-direction: column;
 
 .rji-profile-content p{
 margin-bottom: 0;
-color: #ffffffa4;
+color: #fff;
+font-weight: 700;
+letter-spacing:  0.10rem;
 }
 
 
@@ -3010,11 +3022,11 @@ font-size: 12px;
     }
 
     .rji-cargo-section{
-    background-image: url('images/cargo-home-img-2-new.png');
-    background-position: center;
+    /* background-image: url('images/cargo-home-img-2-new.png'); */
+    background-position: top right;
     background-repeat: no-repeat;
     background-color: #000;
-    background-size: 300px;
+    background-size: 150px;
     padding-bottom: 50px;
     }
 
@@ -3137,9 +3149,30 @@ font-size: 12px;
     color: #fff;
     }
 
-
     #l-container i{
-    
         padding-right: 20px;
+    }
+
+    #cross-icon{
+        padding-right: 50px;
+    }
+    
+    #contact-dialog{
+        display: flex;
+        justify-content: center;
+    }
+    .mfp-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem; 
+    }
+    
+    .mfp-close i {
+        color: white;
+    }
+    
+    #contact-dialog {
+        margin-right: 50px;
     }
 }
